@@ -7,3 +7,24 @@
 .fontRhodium {
     font-family: 'Rhodium Libre', serif;
 }
+
+.irregularform1 {
+    clip-path: polygon(53% 0, 94% 26%, 100% 100%, 0 100%, 0 0);
+}
+
+.irregularform2 {
+    clip-path: polygon(94% 21%, 100% 100%, 0 100%, 0 0);
+}
+
+.irregularform3 {
+    clip-path: polygon(0 0, 95% 8%, 98% 100%, 3% 95%);
+}
+
+#mainNav {
+    top: -30px;
+}
+
+.dotted {
+    border-bottom: dashed 2px black;
+    border-top: dashed 2px black;
+}

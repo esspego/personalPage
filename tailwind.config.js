@@ -1,9 +1,6 @@
 module.exports = {
     purge: [],
     theme: {
-        backgroundColor: theme => ({
-            'brown': '#D8C0A7',
-        }),
         extend: {
             height: {
                 '70vh': '70vh',
