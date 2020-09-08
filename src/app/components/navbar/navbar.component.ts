@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  public currentWindowWidth: number;
+  public openMenu: boolean;
+
+  constructor() {
+    this.openMenu = true;
+   }
 
   ngOnInit(): void {
+    this.currentWindowWidth = window.innerWidth;
+    console.log(this.currentWindowWidth);
+    console.log(this.openMenu);
   }
-
 }
