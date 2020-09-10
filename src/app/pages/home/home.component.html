@@ -21,7 +21,7 @@
     </div>
 </div>
  -->
-<!-- QUITAR EL MT-96 CUANDO LA VARIABLE OPENMENU SEA FALSA -->
+
 <div class="lg:h-full bg-repeat bg-center" style="background-image: url('assets/images/paperBoxtexture.jpg')">
     <div class="lg:h-full   bg-contain bg-opacity-100" style="background-image: url('assets/images/dotsPattern.png')">
         <app-navbar></app-navbar>
@@ -46,21 +46,26 @@
                         />
                         <br /> Tengo experiencia con HTML, CSS, JavaScript, VueJS, NodeJs, Express, NoSQL . Actualmente profundizando en Angular.
                     </h3>
+                    <div class="fontRhodium text-2xl mt-6 ">
+                        <a (click)="openCV()" class="border border-black shadow px-6 py-2 hover:bg-black hover:bg-opacity-25" target="_blank">Ver CV
+                      </a>
+                    </div>
+
                 </div>
                 <div *ngIf="currentTab === 'tab2'">
                     <h1 class="fontRhodium text-2xl  pt-2  font-semibold">Conocimientos:</h1>
                     <div class="flex justify-around">
-                        <ul class="fontRhodium text-lg pt-2">
+                        <ul class="fontRhodium pr-6 text-lg pt-2">
                             <h2 class="fontRhodium text-2xl  pt-2  font-medium">Frotend:</h2>
-                            <li *ngFor="let skill of frontendSkills" class="text-4xl"><i [class]="skill.icon"></i> {{skill.name}}</li>
+                            <li *ngFor="let skill of frontendSkills" class="text-2xl lg:text-3xl"><i [class]="skill.icon"></i> {{skill.name}}</li>
                         </ul>
-                        <ul class="fontRhodium text-lg pt-2">
+                        <ul class="fontRhodium pr-6 text-lg pt-2">
                             <h2 class="fontRhodium text-2xl  pt-2  font-medium">Backend:</h2>
-                            <li *ngFor="let skill of backendSkills" class="text-4xl">{{skill}}</li>
+                            <li *ngFor="let skill of backendSkills" class="text-2xl lg:text-3xl">{{skill}}</li>
                         </ul>
-                        <ul class="fontRhodium text-lg pt-2">
+                        <ul class="fontRhodium pr-6 text-lg pt-2">
                             <h2 class="fontRhodium text-2xl  pt-2  font-medium">Otros:</h2>
-                            <li *ngFor="let skill of othersSkills" class="text-4xl"> {{skill}}</li>
+                            <li *ngFor="let skill of othersSkills" class="text-2xl lg:text-3xl"> {{skill}}</li>
                         </ul>
 
                     </div>
@@ -72,8 +77,8 @@
                         </li>
                         <li class="flex items-center"><i class="p-4 fas fa-mobile-alt text-4xl"></i>628 06 09 89
                         </li>
-                        <li class="flex items-center"><a href="https://www.linkedin.com/in/espego/"><i class="p-4 fab fa-linkedin-in text-4xl"></i>linkedin.com/in/espego</a></li>
-                        <li class="flex items-center"><a href="https://github.com/esspego"><i class="p-4 fab fa-github-alt text-4xl"></i>github.com/esspego </a></li>
+                        <li><a href="https://www.linkedin.com/in/espego/" class="flex items-center"><i class="p-4 fab fa-linkedin-in text-4xl"></i>linkedin.com/in/espego</a></li>
+                        <li class="flex items-center "><a href="https://github.com/esspego" class="flex items-center"><i class="p-4 fab fa-github-alt text-4xl"></i>github.com/esspego </a></li>
                     </ul>
                 </div>
 

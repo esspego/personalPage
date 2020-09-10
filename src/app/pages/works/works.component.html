@@ -1,1 +1,25 @@
-<p>works works!</p>
+<div class="lg:h-full bg-repeat bg-center" style="background-image: url('assets/images/paperBoxtexture.jpg')">
+    <div class=" fontRhodium lg:h-full bg-contain pb-10 " style="background-image: url('assets/images/dotsPattern.png')">
+        <app-navbar></app-navbar>
+
+        <div class=" flex flex-col lg:flex-row lg:items-start justify-center items-center">
+            <div class="bg-repeat bg-center shadow-lg max-w-sm mt-6 lg:mx-8 p-4" style="background-image: url('assets/images/ricepaper.png')" *ngFor="let work of works">
+                <img [src]="work.img" alt="Logo del proyecto" class="w-full">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-2xl mb-2">{{work.name}}</div>
+
+                    <p class="text-gray-700 text-base"> <span class="font-semibold text-lg">Stack Tecnológico:</span> {{work.stack}}</p>
+                    <p class="text-gray-700 text-base pt-2"> <span class="font-semibold text-lg">Descripción:</span> {{work.description}}</p>
+                    <div class="mt-2 flex justify-center">
+                        <a [href]="work.url" class=" text-xl border border-black shadow px-6 py-2 hover:bg-black hover:bg-opacity-25 mt-6" target="_blank">Ver proyecto</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>

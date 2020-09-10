@@ -28,8 +28,12 @@ export class HomeComponent implements OnInit {
     ];
     this.backendSkills = [ 'Node.js', 'Express', 'MongoDb', 'Mongoose'];
     this.othersSkills = ['Boostrap', 'Vuetify', 'Tailwind', 'Firebase' ];
-   }
 
+
+   }
+   openCV (){
+    window.open('assets/CVEsperanzaGarciaOrtiz.pdf', '_blank');
+  }
   ngOnInit(): void {
   }
 

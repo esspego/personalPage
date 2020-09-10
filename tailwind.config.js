@@ -3,11 +3,12 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                yellowmarker: '#Fdffb4'
+                yellowmarker: '#Fdffb4',
+                brownBox: '#D7B393'
             },
             height: {
                 'vh': '50vh',
-                '70': '70vh'
+                '50': '50vh'
             },
         },
     },
