@@ -16,7 +16,5 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
     this.currentWindowWidth = window.innerWidth;
-    console.log(this.currentWindowWidth);
-    console.log(this.openMenu);
   }
 }

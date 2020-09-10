@@ -1,4 +1,4 @@
-<div class="absolute" id="mainNav">
+<div class="py-6">
     <div class=" flex items-center justify-end w-screen">
         <div style="background-image: url('assets/images/ricepaper.png');" class="lg:hidden mr-10 p-2">
             <i class="fas fa-caret-down text-3xl p-2 border-dashed border-t-2 border-b-2 hover:border-black" (click)="openMenu=!openMenu" *ngIf="openMenu===false"></i>
@@ -8,14 +8,14 @@
     <!-- QUITAR CLASE IRREGULAR FORM SOLO PONER EN TAMAÑO LG, AÑADIR LA ACCIÓN DE COLAPSAR -->
 
     <div class="flex flex-col lg:flex-row justify-center items-center lg:justify-around" *ngIf="currentWindowWidth >1023 || openMenu === true">
-        <div style="background-image: url('assets/images/ricepaper.png');" class="irregularform3 flex items-center justify-center p-4  shadow w-2/3 my-2 lg:my-0 lg:m-0 lg:w-48">
-            <a class="fontRhodium text-xl p-2 border-dashed border-t-2 border-b-2 hover:border-black" routerLink="/home" routerLinkActive="bg-yellowmarker">Sobre mí</a>
+        <div style="background-image: url('assets/images/ricepaper.png');" class="irregularform3 flex items-center justify-center p-4 shadow w-2/3 my-2 lg:my-0 lg:m-0 lg:w-48 cursor-pointer" routerLink="/home">
+            <a class="fontRhodium text-2xl p-2 border-dashed border-t-2 border-b-2 hover:border-black" routerLinkActive="bg-yellowmarker">Sobre mí</a>
         </div>
-        <div style="background-image: url('assets/images/ricepaper.png');" class="irregularform2 flex items-center justify-center p-4 shadow w-2/3 my-2 lg:my-0 lg:m-0 lg:w-48">
-            <a class="fontRhodium text-xl p-2 border-dashed border-t-2 border-b-2      hover:border-black" routerLink="/works" routerLinkActive="bg-yellowmarker">Trabajos</a>
+        <div style="background-image: url('assets/images/ricepaper.png');" class="irregularform2 flex items-center justify-center p-4 shadow w-2/3 my-2 lg:my-0 lg:m-0 lg:w-48 cursor-pointer" routerLink="/works">
+            <a class="fontRhodium text-2xl p-2 border-dashed border-t-2 border-b-2      hover:border-black" routerLinkActive="bg-yellowmarker">Trabajos</a>
         </div>
-        <div style="background-image: url('assets/images/ricepaper.png');" class="irregularform1 flex items-center justify-center p-4 shadow w-2/3 my-2 lg:my-0 lg:m-0 lg:w-48">
-            <a class="fontRhodium text-xl p-2 border-dashed border-t-2 border-b-2      hover:border-black " routerLink="/others" routerLinkActive="bg-yellowmarker">Otras cosas</a>
+        <div style="background-image: url('assets/images/ricepaper.png');" class="irregularform1 flex items-center justify-center p-4 shadow w-2/3 my-2 lg:my-0 lg:m-0 lg:w-48 cursor-pointer" routerLink="/others">
+            <a class="fontRhodium text-2xl p-2 border-dashed border-t-2 border-b-2      hover:border-black " routerLinkActive="bg-yellowmarker">Otras cosas</a>
         </div>
     </div>
 </div>
